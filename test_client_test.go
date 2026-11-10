@@ -10,7 +10,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 func testReadBody(t *testing.T, resp *http.Response) string {

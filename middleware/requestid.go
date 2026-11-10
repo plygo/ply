@@ -7,7 +7,7 @@ import (
 	"os"
 	"sync/atomic"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 type RequestIDConfig struct {

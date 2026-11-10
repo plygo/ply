@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"strings"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 func CacheControl(value string) core.Handler {

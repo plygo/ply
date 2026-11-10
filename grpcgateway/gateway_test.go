@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Dziqha/ply"
+	"github.com/plygo/ply"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/structpb"
 )

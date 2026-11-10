@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dziqha/ply/internal/pubsub"
-	"github.com/Dziqha/ply/internal/queue"
+	"github.com/plygo/ply/internal/pubsub"
+	"github.com/plygo/ply/internal/queue"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 func BodyLimit(maxBytes int64) core.Handler {

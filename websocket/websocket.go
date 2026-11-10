@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Dziqha/ply/core"
 	ws "github.com/fasthttp/websocket"
+	"github.com/plygo/ply/core"
 	"github.com/valyala/fasthttp"
 )
 

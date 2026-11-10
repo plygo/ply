@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/core"
-	"github.com/Dziqha/ply/examples/controller"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/core"
+	"github.com/plygo/ply/examples/controller"
 )
 
 func main() {

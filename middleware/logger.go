@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/Dziqha/ply/core"
 	"github.com/fatih/color"
+	"github.com/plygo/ply/core"
 	"github.com/valyala/fasthttp"
 )
 

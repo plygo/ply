@@ -1,6 +1,6 @@
 {
   "name": "create-ply",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "bin": {
     "create-ply": "bin/index.js"
   },
@@ -14,7 +14,7 @@
     "generator",
     "ply"
   ],
-  "author": "Dziqha",
+  "author": "Ply",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,11 +38,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dziqha/ply.git",
+    "url": "git+https://github.com/plygo/ply.git",
     "directory": "templates"
   },
   "homepage": "https://ply.web.id",
   "bugs": {
-    "url": "https://github.com/Dziqha/ply/issues"
+    "url": "https://github.com/plygo/ply/issues"
   }
 }

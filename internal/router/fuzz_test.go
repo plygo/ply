@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 	"github.com/stretchr/testify/require"
 )
 

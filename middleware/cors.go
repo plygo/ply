@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 	"github.com/valyala/fasthttp"
 )
 
@@ -19,9 +19,9 @@ type CORSOptions struct {
 
 func CORS(opts ...CORSOptions) core.Handler {
 	o := CORSOptions{
-		AllowedOrigins: []string{"*"},
-		AllowedMethods: []string{"GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"},
-		AllowedHeaders: []string{"Origin", "Content-Type", "Accept", "Authorization"},
+		AllowedOrigins:   []string{"*"},
+		AllowedMethods:   []string{"GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"},
+		AllowedHeaders:   []string{"Origin", "Content-Type", "Accept", "Authorization"},
 		AllowCredentials: false,
 		MaxAge:           86400,
 	}

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="ply">
-<rect width="512" height="512" rx="112" fill="#14110F"/>
-<g transform="translate(51.2 51.2) scale(6.4)">
-<path fill-rule="evenodd" fill="#F4EFE6" d="M8 8H40L56 24V40H24V56H8ZM24 16V32H48V16Z"/>
-<path fill="#C8A97E" d="M40 8L56 24H40Z"/>
-</g>
-</svg>

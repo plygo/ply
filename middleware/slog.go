@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 type SlogLoggerOptions struct {

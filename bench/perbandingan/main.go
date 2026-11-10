@@ -14,11 +14,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/core"
 	"github.com/gin-gonic/gin"
 	"github.com/gofiber/fiber/v2"
 	"github.com/labstack/echo/v4"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/core"
 )
 
 // OPTIMIZED CONFIGURATION

@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/websocket"
 	wsclient "github.com/fasthttp/websocket"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/websocket"
 	"github.com/valyala/fasthttp"
 )
 

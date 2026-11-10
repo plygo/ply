@@ -4,16 +4,16 @@
 
 [![Go](https://img.shields.io/badge/Go-1.26-blue)](https://go.dev)
 [![Benchmarks](https://img.shields.io/badge/Benchmarks-PASS-brightgreen)]()
-[![Go Report Card](https://goreportcard.com/badge/github.com/Dziqha/ply)](https://goreportcard.com/report/github.com/Dziqha/ply)
-[![Coverage](https://img.shields.io/badge/Coverage-69.3%25-yellow)](https://github.com/Dziqha/ply/actions)
-[![Contributions](https://img.shields.io/badge/Contributions-welcome-blueviolet)](https://github.com/Dziqha/ply/discussions)
-[![License](https://img.shields.io/github/license/Dziqha/ply)](./LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/Dziqha/ply?style=flat)](https://github.com/Dziqha/ply/commits)
-[![Issues](https://img.shields.io/github/issues/Dziqha/ply?style=flat)](https://github.com/Dziqha/ply/issues)
+[![Go Report Card](https://goreportcard.com/badge/github.com/plygo/ply)](https://goreportcard.com/report/github.com/plygo/ply)
+[![Coverage](https://img.shields.io/badge/Coverage-69.3%25-yellow)](https://github.com/plygo/ply/actions)
+[![Contributions](https://img.shields.io/badge/Contributions-welcome-blueviolet)](https://github.com/plygo/ply/discussions)
+[![License](https://img.shields.io/github/license/plygo/ply)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/plygo/ply?style=flat)](https://github.com/plygo/ply/commits)
+[![Issues](https://img.shields.io/github/issues/plygo/ply?style=flat)](https://github.com/plygo/ply/issues)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./docs/public/images/ply-brand/png/ply-lockup-dark-2000w.png">
-  <img src="./docs/public/images/ply-brand/png/ply-lockup-2000w.png" alt="Ply: one ply over fasthttp" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/ply-lockup-dark-2000w.png">
+  <img src="./assets/ply-lockup-2000w.png" alt="Ply: one ply over fasthttp" width="100%">
 </picture>
 
 **Ply** splits routes into three tiers: static, parametric and wildcard. Routes are precompiled and kept in a cache-aware structure for fast, allocation-free matching. Middleware runs through chained handlers, and route groups support custom prefixes and middleware. This keeps Ply fast without giving up flexibility.
@@ -45,11 +45,11 @@ after `app := ply.New()`:
 app.Use(middleware.AuthJWT(os.Getenv("JWT_SECRET")))
 ```
 
-Import `os` and `github.com/Dziqha/ply/middleware`.
+Import `os` and `github.com/plygo/ply/middleware`.
 
 Protected requests must send an `Authorization: Bearer <token>` header.
 Missing or invalid tokens are rejected with `401`. See the
-[Auth middleware docs](docs/content/docs/middleware/auth.mdx) for details.
+[Auth middleware docs](https://ply.web.id/docs/middleware/auth) for details.
 
 Set the secret before starting the server:
 
@@ -84,8 +84,8 @@ app.Get("/metrics", metrics.Handler())
 and cache directives. The `session` package provides cookie-backed sessions
 with a pluggable store.
 
-See the [middleware docs](docs/content/docs/middleware) for configuration and
-ordering details.
+See the [middleware docs](https://ply.web.id/docs/middleware) for configuration
+and ordering details.
 
 ---
 
@@ -103,11 +103,11 @@ grpcGateway.Mount(app, "/grpc")
 ```
 
 Each package is independent. Import only the ones the service uses. See the
-[WebSocket](docs/content/docs/features/websocket.mdx),
-[OpenAPI](docs/content/docs/features/openapi.mdx),
-[OAuth2](docs/content/docs/features/oauth2.mdx),
-[OpenID Connect](docs/content/docs/features/oidc.mdx), and
-[gRPC Gateway](docs/content/docs/features/grpc-gateway.mdx) guides.
+[WebSocket](https://ply.web.id/docs/features/websocket),
+[OpenAPI](https://ply.web.id/docs/features/openapi),
+[OAuth2](https://ply.web.id/docs/features/oauth2),
+[OpenID Connect](https://ply.web.id/docs/features/oidc), and
+[gRPC Gateway](https://ply.web.id/docs/features/grpc-gateway) guides.
 
 ---
 
@@ -116,7 +116,7 @@ Each package is independent. Import only the ones the service uses. See the
 ### Install
 
 ```bash
-go get github.com/Dziqha/ply
+go get github.com/plygo/ply
 ```
 
 ### Scaffold a project
@@ -135,8 +135,8 @@ scaffolding CLI. Ply itself has no Node.js dependency.
 package main
 
 import (
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/core"
 )
 
 func main() {
@@ -164,7 +164,7 @@ The server listens on `http://localhost:8080`.
 
 Measured on a 6C/12T Ryzen 5 5600H with Go 1.26, `wrk` on the same host,
 round-robin reps, median of 3. Method, spread and caveats are documented
-in [Benchmarks](docs/content/docs/benchmarks.mdx).
+in [Benchmarks](https://ply.web.id/docs/benchmarks).
 
 | Workload | Ply | fasthttp | Fiber v3 | Gin | Echo |
 |---|---|---|---|---|---|
@@ -183,9 +183,12 @@ routing and built-in engines, not a different HTTP engine.
 ## Contributing
 
 Bug reports, feature requests and pull requests are welcome. Use
-[Issues](https://github.com/Dziqha/ply/issues) for bugs and
-[Discussions](https://github.com/Dziqha/ply/discussions) for questions
+[Issues](https://github.com/plygo/ply/issues) for bugs and
+[Discussions](https://github.com/plygo/ply/discussions) for questions
 and design proposals.
+
+Documentation lives at [ply.web.id/docs](https://ply.web.id/docs), and the
+website source is in [plygo/website](https://github.com/plygo/website).
 
 ## License
 

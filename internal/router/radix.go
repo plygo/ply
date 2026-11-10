@@ -3,7 +3,7 @@ package router
 import (
 	"strings"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 type nodeType uint8

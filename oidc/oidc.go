@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Dziqha/ply/oauth2"
+	"github.com/plygo/ply/oauth2"
 )
 
 type ProviderConfig struct {

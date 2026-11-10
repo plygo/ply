@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 func Health() core.Handler {

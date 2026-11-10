@@ -3,7 +3,7 @@ package controller
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 // --- Input struct ---

@@ -1,9 +1,9 @@
 package route
 
 import (
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/core"
-	"github.com/Dziqha/ply/examples/controller"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/core"
+	"github.com/plygo/ply/examples/controller"
 )
 
 func NewRouter(router *ply.App, controller *controller.HandlerController) {

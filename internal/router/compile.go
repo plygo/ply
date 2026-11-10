@@ -3,7 +3,7 @@ package router
 import (
 	"strings"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 // ===== Compiled-switch routing =====
@@ -45,7 +45,7 @@ type cWildcard struct {
 // mirroring the radix tree 1:1. Rebuild via Compile() after route changes;
 // safe for concurrent reads once published (entries are immutable).
 type Compiled struct {
-	root *cDecNode      // transcribed radix root (nil when router empty)
+	root *cDecNode       // transcribed radix root (nil when router empty)
 	wild [9][]*cWildcard // wildcards per methodIdx (radix attempt order)
 }
 
@@ -55,7 +55,7 @@ type cDecNode struct {
 	edges []cDecEdge // fragment edges in tree-indices order (distinct first bytes)
 	param *cDecNode  // param edge (nil if none)
 	pname string     // tree param node name (first-registration wins)
-	leaf  [9]*cLeaf // route ending exactly here per method (nil if none)
+	leaf  [9]*cLeaf  // route ending exactly here per method (nil if none)
 }
 
 // cDecEdge is one fragment edge.

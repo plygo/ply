@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/core"
-	"github.com/Dziqha/ply/internal/router"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/core"
+	"github.com/plygo/ply/internal/router"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 )

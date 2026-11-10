@@ -290,7 +290,7 @@ program
             );
           } else {
             updatedMainGo = updatedMainGo.replace(
-              /("github\.com\/Dziqha\/ply")/,
+              /("github\.com\/plygo\/ply")/,
               `$1\n${importLine}`
             );
           }

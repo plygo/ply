@@ -3,8 +3,8 @@ package middleware
 import (
 	"strings"
 
-	"github.com/Dziqha/ply/core"
 	"github.com/golang-jwt/jwt/v5"
+	"github.com/plygo/ply/core"
 	"github.com/valyala/fasthttp"
 )
 

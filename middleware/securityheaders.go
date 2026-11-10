@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 type SecurityHeadersOptions struct {

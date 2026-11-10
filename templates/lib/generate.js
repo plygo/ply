@@ -44,7 +44,7 @@ export async function generateProject(projectName, projectPath, config) {
 
   await execa("go", ["mod", "init", projectName], { cwd: projectPath });
 
-  await execa("go", ["get", "github.com/Dziqha/ply@latest"], {
+  await execa("go", ["get", "github.com/plygo/ply@latest"], {
     cwd: projectPath,
   });
 }
@@ -61,7 +61,7 @@ function generateMainFile(projectName, features) {
   return `package main
 
 import (
-	"github.com/Dziqha/ply"
+	"github.com/plygo/ply"
 ${featureImports}
 )
 
@@ -80,7 +80,7 @@ function generateHandler(name) {
   return `package ${name.toLowerCase()}
 
 import (
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 type Handler struct {
@@ -274,7 +274,7 @@ func (r *Repository) Delete(id string) {
 function generateFeatureRouter(projectName, featureName, name) {
   return `package ${featureName}
 
-import "github.com/Dziqha/ply"
+import "github.com/plygo/ply"
 
 func RegisterRoutes(app *ply.App) {
 	// Initialize dependencies
@@ -534,7 +534,7 @@ go get go.mongodb.org/mongo-driver/mongo
 
   return `# ${project}
 
-Generated with [Ply CLI](https://github.com/Dziqha/ply)
+Generated with [Ply CLI](https://github.com/plygo/ply)
 
 ## Feature-Based Architecture
 
@@ -614,7 +614,7 @@ ${features
 
 ## Resources:
 
-- [Ply Documentation](https://github.com/Dziqha/ply)
+- [Ply Documentation](https://ply.web.id/docs)
 - [Go Documentation](https://golang.org/doc/)
 ${config.database ? `- [${config.database.type} Documentation](${getDbDocUrl(config.database.type)})` : ""}
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 	"github.com/valyala/fasthttp"
 )
 

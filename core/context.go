@@ -11,10 +11,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Dziqha/ply/internal/cache"
-	"github.com/Dziqha/ply/internal/concurrency"
-	"github.com/Dziqha/ply/internal/pubsub"
-	"github.com/Dziqha/ply/internal/queue"
+	"github.com/plygo/ply/internal/cache"
+	"github.com/plygo/ply/internal/concurrency"
+	"github.com/plygo/ply/internal/pubsub"
+	"github.com/plygo/ply/internal/queue"
 
 	"github.com/valyala/fasthttp"
 )

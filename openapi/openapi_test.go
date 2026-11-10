@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/core"
 )
 
 func TestDocument_FromRoutes(t *testing.T) {

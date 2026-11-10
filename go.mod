@@ -1,4 +1,4 @@
-module github.com/Dziqha/ply
+module github.com/plygo/ply
 
 go 1.26.0
 

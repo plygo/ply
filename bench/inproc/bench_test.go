@@ -9,10 +9,10 @@ package inproc
 import (
 	"testing"
 
-	"github.com/Dziqha/ply"
-	"github.com/Dziqha/ply/core"
 	fiber2 "github.com/gofiber/fiber/v2"
 	fiber3 "github.com/gofiber/fiber/v3"
+	"github.com/plygo/ply"
+	"github.com/plygo/ply/core"
 	"github.com/valyala/fasthttp"
 )
 

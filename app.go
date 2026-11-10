@@ -17,11 +17,11 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/Dziqha/ply/core"
-	"github.com/Dziqha/ply/internal/cache"
-	"github.com/Dziqha/ply/internal/pubsub"
-	"github.com/Dziqha/ply/internal/queue"
-	"github.com/Dziqha/ply/internal/router"
+	"github.com/plygo/ply/core"
+	"github.com/plygo/ply/internal/cache"
+	"github.com/plygo/ply/internal/pubsub"
+	"github.com/plygo/ply/internal/queue"
+	"github.com/plygo/ply/internal/router"
 	"github.com/valyala/fasthttp"
 )
 

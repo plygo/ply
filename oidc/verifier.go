@@ -19,8 +19,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Dziqha/ply/core"
 	"github.com/golang-jwt/jwt/v5"
+	"github.com/plygo/ply/core"
 )
 
 const ClaimsKey = "oidc.claims"

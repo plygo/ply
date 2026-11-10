@@ -3,7 +3,7 @@ package controller
 import (
 	"fmt"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 type HandlerController struct{}

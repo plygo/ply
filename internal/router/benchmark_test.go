@@ -3,7 +3,7 @@ package router
 import (
 	"testing"
 
-	"github.com/Dziqha/ply/core"
+	"github.com/plygo/ply/core"
 )
 
 var benchPaths = []string{
