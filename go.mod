@@ -6,7 +6,7 @@ require (
 	github.com/fasthttp/websocket v1.5.12
 	github.com/go-playground/validator/v10 v10.30.6
 	github.com/valyala/fasthttp v1.77.0
-	google.golang.org/protobuf v1.36.10
+	google.golang.org/protobuf v1.36.12
 )
 
 require (
